@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pizza Clicker</h1>
+    
+    <div class="game-container">
+        <div class="score-display">
+            <h2><span id="score-display">0</span> Pizzas</h2>
+            <p><span id="pps-display">0</span> pizzas por segundo</p>
+        </div>
+
+        <div class="click-area">
+            <img src="pizza.jpg" id="pizza-button" alt="Clique na Pizza">
+        </div>
+
+        <div class="upgrades-area">
+            <button id="buy-click-upgrade">
+                Comprar "Mão mais Rápida" (+1 por clique)
+                <span id="click-upgrade-cost">Custo: 50</span>
+            </button>
+            <button id="buy-passive-upgrade">
+                Comprar "Forno" (+1 por segundo)
+                <span id="passive-upgrade-cost">Custo: 100</span>
+            </button>
+            </div>
+        </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

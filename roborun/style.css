@@ -1,0 +1,43 @@
+body { text-align: center; font-family: sans-serif; }
+
+#game-world {
+    width: 800px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 10px auto;
+    position: relative; /* O mais importante! */
+    overflow: hidden;   /* Esconde o que sai da tela */
+    background: #f0f0f0;
+}
+
+#player {
+    width: 40px;
+    height: 40px;
+    background-color: #333; /* Nosso "robô" */
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+/* O obstáculo será criado com esta classe */
+.obstacle {
+    width: 20px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: -20px; /* Começa fora da tela */
+}
+
+/* O chão se move usando uma animação CSS! */
+#ground {
+    width: 100%;
+    height: 5px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#score { font-size: 2em; }
+.hidden { display: none; }
